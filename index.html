@@ -16,6 +16,7 @@
       --fg: #fff;
       --muted: rgba(255,255,255,0.65);
       --soft: rgba(255,255,255,0.45);
+      --faint: rgba(255,255,255,0.3);
     }
 
     * {
@@ -64,19 +65,18 @@
       margin-bottom: 24px;
     }
 
+    .signal {
+      margin-top: 32px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--faint);
+    }
+
     footer {
       margin-top: 96px;
       font-size: 14px;
       color: var(--soft);
     }
-.soon {
-  display: block;
-  margin-top: 16px;
-  font-size: 12px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.35;
-}
 
     footer a {
       color: inherit;
@@ -85,6 +85,22 @@
 
     footer a:hover {
       opacity: 0.8;
+    }
+
+    .soon {
+      display: block;
+      margin-top: 16px;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.35;
+    }
+
+    .license {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      opacity: 0.3;
     }
 
     @media (min-width: 768px) {
@@ -98,6 +114,7 @@
 <body>
   <main class="page">
 
+    <!-- HERO -->
     <section class="hero">
       <h1>
         VOYDE<br>
@@ -106,18 +123,30 @@
       <div class="motto">From void, through process.</div>
     </section>
 
+    <!-- MANIFESTO -->
     <section class="manifesto">
       <p>
-        Voyde Procedural explores form as an outcome, not a starting point.
+        Voyde Procedural explores form as an outcome,<br>
+        not a starting point.
       </p>
+
       <p>
         Emerging from absence, each work is shaped through systems,
         repetition, and controlled variation.
       </p>
+
+      <!-- PLATFORM / ALGORITHM SIGNAL -->
+      <div class="signal">
+        Procedural and generative assets developed through rule-based systems,
+        available for experimental and commercial use.
+      </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <a href="mailto:hello@voydeprocedural.com">hello@voydeprocedural.com</a>
+      <span class="soon">Coming soon</span>
+      <span class="license">Selected works available for commercial use.</span>
     </footer>
 
   </main>
