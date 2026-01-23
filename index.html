@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <title>Voyde Procedural</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" href="/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
 
+  <!-- FAVICONS -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
+  <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -41,6 +43,13 @@
       max-width: 1100px;
     }
 
+    @media (min-width: 768px) {
+      .page {
+        padding: 96px 96px;
+      }
+    }
+
+    /* HERO */
     .hero {
       margin-bottom: 72px;
     }
@@ -59,6 +68,7 @@
       letter-spacing: 0.04em;
     }
 
+    /* MANIFESTO */
     .manifesto {
       max-width: 520px;
       font-size: 17px;
@@ -77,6 +87,56 @@
       color: var(--faint);
     }
 
+    /* PRODUCTS */
+    .products {
+      margin-top: 96px;
+    }
+
+    .products h2 {
+      margin-bottom: 32px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--soft);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+    }
+
+    .product-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      background: #111;
+    }
+
+    .product-info h3 {
+      margin: 0 0 4px 0;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .product-info p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--soft);
+    }
+
+    .product-card:hover img {
+      outline: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* FOOTER */
     footer {
       margin-top: 96px;
       font-size: 14px;
@@ -107,12 +167,6 @@
       font-size: 12px;
       opacity: 0.3;
     }
-
-    @media (min-width: 768px) {
-      .page {
-        padding: 96px 96px;
-      }
-    }
   </style>
 </head>
 
@@ -140,10 +194,28 @@
         repetition, and controlled variation.
       </p>
 
-      <!-- PLATFORM / ALGORITHM SIGNAL -->
       <div class="signal">
         Procedural and generative assets developed through rule-based systems,
         available for experimental and commercial use.
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+      <h2>Assets</h2>
+
+      <div class="product-grid">
+
+        <a class="product-card" href="https://superhive.io" target="_blank">
+          <img src="assets/product-1.jpg" alt="Procedural Asset">
+          <div class="product-info">
+            <h3>Procedural Crystal Generator</h3>
+            <p>Rule-based crystal growth system for Blender.</p>
+          </div>
+        </a>
+
+        <!-- yeni ürün için bu kartı kopyala -->
+
       </div>
     </section>
 
